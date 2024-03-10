@@ -1,0 +1,19 @@
+body {
+    font-family: $font-family;
+    // background-color: $background-color;
+    color: $text-color;
+    // color: $title-color;
+    line-height: 1.6;
+    margin: 0;
+    padding: $base-spacing;
+    background-image: url('../scss/image/img3.jpeg');
+        background-size: cover;
+  }
+  
+  h1 {
+    color: $title-color;
+    text-align: center;
+
+  }
+
+ 
