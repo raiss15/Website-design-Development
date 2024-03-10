@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="dist/main.css">
+</head>
+
+<!-- Banner and Search Form -->
+<body>
+
+<div class="bg-img">
+    <div class="container">
+        <div class="topnav">
+            <div class="logo-container">
+                <img src="Images/logo.png" alt="Company Logo" class="logo">    
+            </div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <div class="dropdown">
+                <button class="dropbtn">Services</button>
+                <div class="dropdown-content">
+                    <a href="#honeymoon packages">Honeymoon Packages</a>
+                    <a href="#tour packages">Tour Packages</a>
+                    <a href="#musical events">Musical Events</a>
+                    <a href="#build package">Build Package</a>
+                </div>
+            </div>
+            <a href="#upcomingpackages">Upcoming Packages</a>
+            <button type="button" class="contact-button">Get In Touch</button>
+        </div>
+    </div>
+     <div>
+        <h2 class="text">No matter where you're going to, we'll take you there</h2>
+     </div>   
+
+     <span class="search">
+        <form action="search_destination" method="get" class="search-form">
+
+            <!-- Input for destination -->
+            <input type="text" id="destination" name="destination" placeholder="Where to?" required>
+        
+            <!-- Dropdown for travel type -->
+            <select id="traveltype" name="traveltype" required>
+                <option value="" disabled selected>Travel Type</option>
+                <option value="traveltype1">Travel Type 1</option>
+                <option value="traveltype2">Travel Type 2</option>
+                <option value="traveltype3">Travel Type 3</option>
+            </select>
+        
+            <!-- Dropdown for duration -->
+            <select id="duration" name="duration" required>
+                <option value="" disabled selected>Duration</option>
+                <option value="Days">Days</option>
+                <option value="Weeks">Weeks</option>
+                <option value="Months">Months</option>
+            </select>
+    
+            <!-- Submit button -->
+            <button type="submit" class="submit-btn">Submit</button>
+            
+        </form>
+
+    </span>
+
+     <div class="icon-container">
+        <img src="Images/london.jpeg" alt="Profile 1" class="profile-icon">
+        <img src="Images/london.jpeg" alt="Profile 2" class="profile-icon">
+        <img src="Images/london.jpeg" alt="Profile 3" class="profile-icon">
+        <img src="Images/london.jpeg" alt="Profile 4" class="profile-icon">
+        <p class="profile-icon"> </p>
+        <div class="more-icon">+</div>
+        <!-- Wrap the paragraph and the more icon in a div with class "icon-text-wrapper" -->
+        <div class="icon-text-wrapper">
+            <p class="profile-text">2,500 people booked Tomorrowland event in last 24 hours</p>
+            
+        </div>
+    </div>
+        <div>
+            <p class="scroll">Scroll</p>
+        </div>
+</div>
+
+
+<!-- Brand Logo Secton -->
+
+<div>
+
+    <span class="company-logo">
+          <div>
+          <img src="Images/airbnba.png" alt="" width="90%" height="90%" >
+        </div>
+        <div>
+          <img src="styles/Images/fly1.png" alt="" width="90%" height="90%" >
+        </div>
+        <div>
+          <img src="Images/swiss.png" alt="" width="90%" height="90%" >
+        </div>
+        <div>
+          <img src="Images/trivagoa.png" alt="" width="90%" height="90%" >
+        </div>
+        <div>
+          <img src="Images/Turkisha1.png" alt="" width="90%" height="90%" >
+        </div>
+        
+        </span>
+
+</div>
+<br><br><br>
+
+<!-- Service Section -->
+
+<div>
+    <span class="category-title"><h4>CATEGORY</h4></span>
+    <span class="main-title"><h1>We Offer Best Services</h1></span>
+</div>
+
+<div class="service-container">
+    <div class="service">
+        <img src="Images/guidedtour.png" alt="" class="service-image">
+        <h4 class="service-title">Guided Tour</h4>
+        <p class="service-description">Tour guide available for any destination in the world</p>
+    </div>
+    
+    <!-- Add an id "flight-option" to this div -->
+    <div class="service" id="flight-option">
+        <img src="Images/flight.png" alt="" class="service-image">
+        <h4 class="service-title">Best Flight Options</h4>
+        <p class="service-description">Choose from a variety of flight options</p>  
+    </div>
+
+
+    <div class="service">
+        <img src="Images/namaste.png" alt="" class="service-image">
+        <h4 class="service-title">Religious Tour</h4>
+        <p class="service-description">Experience spiritual journeys across the globe</p>
+    </div>
+
+    <div class="service">
+        <img src="Images/medicalins.png" alt="" class="service-image">
+        <h4 class="service-title">Medical Insurance</h4>
+        <p class="service-description">Stay protected with our comprehensive medical insurance</p>
+    </div>
+</div>
+
+<br><br><br>
+
+<!-- Special Package Section -->
+ 
+<div class="flex-container">
+
+    <!-- Image container -->
+    <div class="image-container">
+        <img src="Images/coupleimg.jpeg" alt="" class="responsive-image" >
+    </div>
+
+    <!-- Text container -->
+    <div class="text-container">
+
+        <!-- Honeymoon Special -->
+        <h5 class="honeymoon-special">HONEYMOON SPECIALS</h5>
+
+        <!-- Romantic Tropical Destinations -->
+        <h1 class="romantic-destinations">
+            Our Romantic Tropical<br>Destinations
+        </h1>
+
+        <!-- Package Description-->
+        <p class="package-description">
+            Discover unbeatable deals on our travel packages, <br>tailored for every budget and every dream destination. <br>Explore the world with our exclusive travel packages – <br>adventure, luxury, and culture await!
+        </p>
+        
+        <!-- View Packages Button -->
+        <button type="button" class="view-packages-btn">View Packages</button>
+
+    </div>
+
+</div>
+
+<!-- Booking Option Section -->
+
+<div class="flex-container">
+
+    <!-- Left container -->
+    <div class="left-container">
+        <h3 class="fast-easy">Fast & Easy</h3>
+        <h1 class="resort-bookings">Get Your Favourite<br>Resort Bookings</h1>
+
+        <!-- Smaller images with descriptions -->
+        <div class="description-container">
+            <img src="Images/destination.png" alt="" class="small-image">
+            <div>
+                <h4>Choose Destination</h4>
+                <p>Choose your destination with exciting offers</p>
+            </div>
+        </div>
+
+        <div class="description-container">
+            <img src="Images/availability.png" alt="" class="small-image">
+            <div>
+                <h4>Check Availability</h4>
+                <p>Rooms Availability at your time of arrival</p>
+            </div>
+        </div>
+
+        <div class="description-container">
+            <img src="Images/go.png" alt="" class="small-image">
+            <div>
+                <h4>Let's GO</h4>
+                <p>Pack your bags and get ready to fly</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right container -->
+    <div class="right-container">
+        <img src="Images/travelplan.jpeg" alt="" class="large-image">
+    </div>
+
+</div>
+
+<!-- Middle Banner Section -->
+
+<div class="background-section">
+    <div class="text-overlay">Let's Make Your Next Holiday Amazing</div>
+</div>
+
+
+<!-- Package Offer Section-->
+
+<div class="content-wrapper">
+    <!-- Left container -->
+    <div class="left-container">
+        <h3 class="promotion-title">Promotion</h3>
+        <h1 class="main-title">We Provide You Best<br>Europe Sightseeing Tours</h1>
+        <p class="description">Discover the enchantment of Europe with our exclusive sightseeing packages. Immerse yourself in the rich history, breathtaking landscapes, and vibrant cultures of iconic destinations like Paris, Rome, and Barcelona.</p>
+        <button class="view-button1">View Packages</button>
+
+    <br><br><br>
+        
+        <div class="images-container">
+            <div class="city-image-container">
+                <img src="Images/rome.jpeg" alt="" class="city-image">
+                <button class="price-button">$700</button>
+            </div>
+            <div class="city-image-container">
+                <img src="Images/sweden.jpeg" alt="" class="city-image">
+                <button class="price-button">$800</button>
+            </div>
+            <div class="city-image-container">
+                <img src="Images/vietnam.jpeg" alt="" class="city-image">
+                <button class="price-button">$500</button>
+            </div>
+            <div class="city-image-container london">
+                <img src="Images/london.jpeg" alt="" class="city-image">
+                <button class="price-button">$400</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right container -->
+    <div class="right-container">
+        <img src="Images/paris.jpeg" alt="" class="paris-image">
+    </div>
+
+</div>
+
+  <br><br>
+
+  <!-- Banner Section -->
+
+<div class="content-row">
+
+    <!-- Explore Nature Section -->
+    <div class="content-block nature">
+        <h3 class="promotion-title">Promotion</h3>
+        <h1 class="section-title">Explore Nature</h1>
+        <button class="view-button2">View Packages</button>
+    </div>
+
+    <!-- City Explore Section -->
+    <div class="content-block city">
+        <h3 class="promotion-title">Promotion</h3>
+        <h1 class="section-title">City Explore</h1>
+        <button class="view-button2">View Packages</button>
+    </div>
+
+</div>
+
+<br><br><br>
+<!-- Differrent Package Options -->
+
+<div class="trending-section">
+    <h4 class="trending-title">TRENDY</h4>
+    <h1 class="trending-subtitle">Our Trending Tour <br>Packages</h1>
+</div>
+
+<div class="tour-packages">
+
+    <div class="package">
+        <!-- Main Image -->
+        <img src="Images/switzerland.jpeg" alt="" class="main-image">
+        <!-- Icons and Text Below Main Image -->
+        <img src="Images/swizterlandicon.jpeg" alt="" class="icon">
+        <div class="details">
+            <img src="Images/duration8.png" alt="" class="icon"> 8 Days
+            <img src="Images/peopleicon.png" alt="" class="icon"> 25 Peoples Going
+        </div>
+        <div class="location">
+            Switzerland <img src="Images/rating.png" alt="" class="rating">
+        </div>
+        <div class="destination">Europe</div>
+        <div class="price">1,000 $ <s>1,200 $</s></div>
+        <p>Experience the perfect blend of scenic Alpine beauty, rich cultural heritage, and luxurious comfort, making your Swiss adventure truly unforgettable.</p>
+        <button class="explore-button">Explore Now</button>
+    </div>
+
+    <div class="package">
+        <!-- Main Image -->
+        <img src="Images/amazon.jpeg" alt="" class="main-image">
+        <!-- Icons and Text Below Main Image -->
+        <img src="Images/braziilicon.jpeg" alt="" class="icon">
+        <div class="details">
+            <img src="Images/duration8.png" alt="" class="icon"> 8 Days
+            <img src="Images/peopleicon.png" alt="" class="icon"> 30 Peoples Going
+        </div>
+        <div class="location">
+            Amazon <img src="Images/rating.png" alt="" class="rating">
+        </div>
+        <div class="destination">Brazil</div>
+        <div class="price">1,223 $ <s>1,200 $</s></div>
+        <p>Embark on a thrilling adventure into the heart of the Amazon rainforest, a vast natural wonder teeming with exotic wildlife, lush greenery, and the untamed spirit of adventure.</p>
+        <button class="explore-button">Explore Now</button>
+    </div>
+
+    <div class="package">
+        <!-- Main Image -->
+        <img src="Images/giza.jpeg" alt="" class="main-image">
+        <!-- Icons and Text Below Main Image -->
+        <img src="Images/gizaicon.jpeg" alt="" class="icon">
+        <div class="details">
+            <img src="Images/duration8.png" alt="" class="icon"> 8 Days
+            <img src="Images/peopleicon.png" alt="" class="icon"> 125 Peoples Going
+        </div>
+        <div class="location">
+            Giza <img src="Images/rating.png" alt="" class="rating">
+        </div>
+        <div class="destination">Egypt</div>
+        <div class="price">1,223 $ <s>1,200 $</s></div>
+        <p>Experience the timeless wonder of the Giza pyramids, an architectural marvel and enduring testament to the ingenuity of ancient Egyptian civilization. Stand in the shadow of the Great Sphinx and immerse yourself in history.</p>
+        <button class="explore-button">Explore Now</button>
+    </div>
+
+</div>
+
+<!-- Client Testimonial -->
+
+<div class="main-container">
+    <div class="promotion-section">
+        <img src="Images/snell.jpeg" alt="" class="promo-image">
+        <h4 class="promotion-title">PROMOTION</h4>
+        <img src="Images/picturec.jpeg" alt="" class="promo-image">
+    </div>
+    
+    <h1 class="client-say">See What Our Client Say <br> About Us</h1>
+
+    <div class="client-image-container">
+        <img src="Images/client.jpeg" alt="" class="client-image">
+    </div>
+
+    <div class="testimonial-section">
+        <div class="arrow left-arrow">&#8592;</div>
+        <div class="testimonial-content">
+            <p class="testimonial-quote">"Booking our trip was the best decision we made this year! Every detail was perfectly organized, from the breathtaking accommodations to the unforgettable excursions. The team's personal touch and deep knowledge of destination made our experience truly one-of-a-kind. We couldn't have asked for a more magical vacation!"</p>
+            <p class="testimonial-author"><b>Christine Beckam- Designer</b></p>
+        </div>
+        <div class="arrow right-arrow">&#8594;</div>
+    </div>
+
+    <div class="travel-footer">
+        <img src="Images/travelitems.jpeg" alt="" class="footer-image">
+        <span class="orange-line"><b>---------</b></span>
+    </div>
+</div>
+
+
+<!-- Footer Section -->
+<!-- <section class="footer-section" style="background-image: url(Images/mount.jpeg);"> -->
+    <section class="footer-section">
+
+    <footer class="footer">
+        <!-- Logo and Text Section -->
+        <div class="logo-text-section">
+            <div class="logo-section">
+                <img src="Images/logo.png" alt="Logo" class="logo"> 
+                <p>Travel helps companies manage payments easily</p>
+            </div>
+            <div class="social-links">
+              <a href="#"><img src="Images/linkedin.png" alt="LinkedIn" class="social-icon"></a>
+              <a href="#"><img src="Images/twitter.png" alt="Twitter" class="social-icon"></a>
+              <a href="#"><img src="Images/infinite.jpeg" alt="Infinite" class="social-icon"></a>
+              <a href="#"><img src="Images/messanger.png" alt="Messenger" class="social-icon"></a>
+            </div>
+        </div>
+        <!-- Company's Inner Page Section -->
+        <div class="company-section">
+            <strong>Company</strong>
+            <div class="company-links">
+               <a href="#About Us">About Us</a>
+            </div>
+            <div class="company-links">
+               <a href="#Career">Career</a>
+            </div>
+            <div class="company-links">
+              <a href="#Blog">Blog</a>
+            </div>
+            <div class="company-links">
+             <a href="#Pricing">Pricing</a>
+            </div>
+        </div>
+        <!-- Destination Section -->
+        <div class="destination-section">
+            <span>Destination</span>
+            <div class="destination-links">Maldives</div>
+            <div class="destination-links">Las Vegas</div>
+            <div class="destination-links">Los Angeles</div>
+            <div class="destination-links">Toronto</div>
+        </div>
+        <!-- Newsletter Section -->
+        <div class="newsletter-section">
+            <h2>Join our Newsletter</h2>
+            <form>
+                <input class="form-textbox" type="email" placeholder="Your email address">
+                <input class="form-submit" type="submit" value="Subscribe">
+            </form>
+            <p class="newsletter-info">* Will send you weekly updates for your better tour package</p>
+        </div>
+    </footer>
+  </section>
+  <!-- Footer Bottom Line -->
+  <div class="footer-bottom-line">
+      <hr> 
+      <p>Copyright © Xpro 2022. All Rights Reserved.</p>
+  </div>
+  
+</body>
+</html>

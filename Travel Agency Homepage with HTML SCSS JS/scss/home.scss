@@ -1,0 +1,799 @@
+@import 'mixins';
+@import 'banner';
+@import 'navbar';
+@import 'dropdown';
+@import 'footer';
+@import 'responsive';
+
+body {font-family: $font-family_1;}
+* {box-sizing: border-box;}
+
+/* Banner and Search Form Section */
+
+.bg-img {
+  /* The image used */
+  background-image: url("Images/bgimg4.jpeg");
+  
+  @include bg-img;
+}
+
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  margin-right: 10%;
+  margin-left: 2%;
+
+  
+}
+
+.logo-container img{
+
+  width: 150px;
+  height: 100px;
+  margin-right: 50px;
+}
+
+/* The navbar */
+
+/* Updated navbar to be fixed on the viewport */
+.topnav {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  z-index: 1000; 
+  @include flex-center;
+  overflow: hidden;
+  background-color: lavender;
+  width: 100%;
+  height: 180px;
+  
+a {
+  @extend %nav-link-base;
+  margin-right: 10%;
+  color: $color_1;
+
+  &:hover {
+    background-color: $background-color_3;
+    color: $color_1;
+  }
+}
+
+  .contact-button {
+    @extend %nav-button-base;
+   
+    &::after {
+      content: " ➜";
+      color: $color_3;
+      padding-right: 3%;
+    }
+  }
+}
+
+.main-content {
+  padding-top: 10px; 
+  
+}
+
+/* Dropdown button */
+.dropbtn {
+    /* background-color: #333; */
+    text-decoration-color: $color_2;
+    padding: 14px 16px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+   @include dropdown;
+   }
+  
+  /* Show the dropdown button on hover */
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: $background-color_3;
+    color: $color_1;
+  }
+  
+  /* Add responsiveness -  */
+
+ @include responsive;
+
+ .search {
+ background-color: rgb(205, 202, 202);
+ display:inline-block;
+ }
+
+.search-form input[type="text"],
+.search-form select {
+    flex: 1;
+    border: 0px solid $color_2;
+    margin-right: 10px;
+    padding-left: 0%;
+    margin-left: 100px;
+}
+
+.search-form select:last-child {
+    margin-right: 0; 
+}
+
+.submit-btn {
+    background-color: $background-color_5;
+    border-radius: 5px;
+    line-height: 2.5;
+    color: $color_4;
+    border: none; 
+    cursor: pointer; 
+   
+}
+
+.submit-btn {
+    padding: 0 10px;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    padding-left: 9%;
+  }
+  
+  .profile-icon {
+    border-radius: 50%; 
+    width: 40px;
+    height: 40px; 
+    margin-right: -15px; 
+    border: 2px solid $color_2; 
+    background-color: $background-color_1;
+    
+  }
+  
+  .more-icon {
+    @include flex-center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    /* background-color: grey;  */
+    color: $color_2;
+    font-weight: bold;
+    margin-left: -15px;
+   padding-left:-5%;
+  }
+  
+  .text {
+
+    color: $color_2;
+    margin: 10px;
+    overflow: auto;
+    flex-basis: 100px;
+    flex-grow: 0.1;
+    flex-shrink: 0.2;
+  }
+
+  .icon-text-wrapper {
+    display: flex; 
+    align-items: center; 
+    color: $color_2;
+}
+
+.scroll{
+  padding-right: 90%;
+    
+    color: $color_2;
+}
+
+/* Brand Logo Section */
+
+.company-logo{
+
+    background-color: $background-color_4; 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 1% ;
+    
+}
+
+/* ServiceSection  */
+
+.category-title h4,
+.main-title h1 {
+    text-align: center;
+}
+
+.category-title h4 {
+    color: $color_5;
+}
+
+.main-title h1 {
+    color: $color_6;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.service {
+    text-align: center;
+    padding: 0 2%; 
+}
+
+.service-image {
+    width: 100px;
+    height: 100px;
+}
+
+.service-title {
+    color: $color_6;
+    padding: 10px 0; 
+}
+
+.service-description {
+  word-wrap: break-word; 
+  width: 150px; 
+}
+
+#flight-option:hover {
+  background-color: $background-color_6; 
+  transform: scale(1.05); 
+  transition: transform 0.3s ease, background-color 0.3s ease; 
+  cursor: pointer; 
+  box-sizing: border-box;
+  border-radius: 2%;
+  box-shadow:$color_1;
+
+}
+
+/* Special Package Section  */
+
+.flex-container {
+  @include flex-center;
+}
+
+.image-container {
+  flex: 1;
+  text-align: center;
+  padding-left: 10%;
+  width: 100%; 
+  height: 280%
+  image
+}
+
+.responsive-image {
+ @include responsive-image;
+}
+
+.text-container {
+  flex: 1;
+  padding-left: 5%; 
+}
+
+.honeymoon-special {
+  color: $color_5;
+  text-align: left;
+}
+
+.romantic-destinations {
+  color: $color_6;
+  text-align: left;
+}
+
+.package-description {
+  text-align: left; 
+}
+
+.view-packages-btn {
+  background-color: $background-color_5;
+  border-radius: 5px;
+  line-height: 2.5;
+  color: $color_4;
+  border: none; 
+  cursor: pointer; 
+  margin-top: 20px; 
+}
+
+
+/* Booking Option Section */
+
+.flex-container {
+  @include flex-center;
+}
+
+.left-container {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.fast-easy, .resort-bookings {
+  text-align: left;
+  padding-left: 35%;
+}
+
+.fast-easy {
+  color: $color_5;
+}
+
+.resort-bookings {
+  color: $color_6;
+}
+
+.description-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  padding-left: 35%;
+}
+
+.small-image {
+  width: 80px;
+  height: 80px;
+}
+
+h4 {
+  color: $color_6;
+}
+
+.right-container {
+  flex: 1;
+  text-align: center;
+  padding-right:5%;
+}
+
+.large-image {
+  @include responsive-image;
+  max-width: 320px;
+}
+
+/* Middle Banner Section */
+
+.background-section {
+  position: relative;
+  width: 100%; 
+  height: 300px; 
+  background-image: url('Images/liberty.jpeg'); 
+  background-size: cover; 
+  background-position: center; 
+  @include flex-center;
+}
+
+.text-overlay {
+  color: $color_2; 
+  font-size: 24px; 
+  text-align: center;
+  padding: 20px; 
+  padding-right:35%;
+}
+
+/* Package Offer Section */
+
+ .content-wrapper {
+  @include flex-center;
+  padding:5%;
+  margin-bottom: 30px;
+  position: relative;
+  
+}
+
+.left-container, .right-container {
+  flex: 1;
+}
+
+.promotion-title {
+  color: $color_5;
+  padding-left: 35%;
+}
+
+.main-title {
+  color: $color_6;
+  padding-left: 35%;
+}
+
+.description {
+  padding-left: 35%;
+}
+
+.view-button {
+  background-color: $background-color_1;
+  border-radius: 5px;
+  color: $color_4;
+  padding: 10px 20px;
+  margin-left: 35%;
+  cursor: pointer;
+  padding-left: 35%;
+}
+
+.images-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  overflow-x: auto; 
+  white-space: nowrap; 
+  /* gap: 2px; */
+  margin-right: -210px;
+  margin-left: 180px;
+
+}
+
+.city-image-container {
+  position: relative;
+  @include flex-center;
+}
+
+.city-image {
+  width: 150px; 
+  height: 150px; 
+  object-fit: cover; 
+  border-radius: 10px;
+
+  
+}
+
+.price-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: $background-color_7;
+  color: $color_4;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin:5px;
+  border-radius: 10px;
+}
+
+.city-image-container london {
+
+  position:absolute;
+  top: 0;
+  right: 80%;
+  z-index: 1;
+}
+
+.paris-image {
+  width: 320px;
+  height: auto;
+  border-radius: 5px;
+  /* position: absolute; */
+} 
+
+/* Banner Section */
+
+.content-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.content-block {
+  position: relative;
+  width: 45%; 
+  height: 300px; 
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  @include flex-center;
+  text-align: center;
+}
+
+.nature {
+  background-image: url('Images/nature.webp');
+}
+
+.city {
+  background-image: url('Images/city.jpeg');
+}
+
+.promotion-title, .section-title, .view-button {
+  color: $color_2;
+  margin: 10px;
+  
+}
+
+.promotion-title {
+
+  text-align: center;
+  padding-left: 5%;
+}
+
+.view-button1 {
+  background-color: $background-color_1;
+  border-radius: 5px;
+  color: $color_4;
+  padding: 10px 20px;
+  margin-left: 30%;
+  cursor: pointer;
+  padding-left: 5%;
+}
+
+.view-button:hover {
+  background-color: $background-color_8;
+}
+
+
+/* Differrent Package Options */
+
+.trending-section {
+  text-align: center;
+
+  padding: 2px;
+}
+
+.trending-title {
+  color: $color_5;
+  
+}
+
+.trending-subtitle {
+  color: $color_6;
+}
+
+.tour-packages {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /* padding: 1px; */
+  flex-wrap: wrap; 
+}
+
+.package {
+  width: 30%; 
+  margin: 1%; 
+  padding: 5%;
+  /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); Optional: Adds shadow for depth */
+  background-color: $background-color_9; 
+}
+
+.main-image {
+  @include responsive-image;
+  margin-bottom: 20px; 
+}
+
+.icon, .details img {
+  width: 8%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.details {
+  color: $color_7;
+  margin-bottom: 20px; 
+}
+
+.location, .destination, .price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px; 
+  
+}
+
+.view-button2 {
+
+  background-color: $background-color_1;
+  border-radius: 5px;
+  color: $color_4;
+  padding: 10px;
+  margin-left: 2%;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rating {
+  width: 80px;
+  height: auto;
+}
+
+.explore-button {
+  background-color: $background-color_5;
+  color: $color_4;
+  border-radius: 5px;
+  line-height: 2.5;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  width: 100%; 
+  margin-top: 20px; 
+}
+
+
+/* Client Testimonial */
+
+.main-container {
+  background-color: $background-color_10;
+}
+
+.promotion-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; 
+  padding: 0 20px; 
+}
+
+.promotion-section > * {
+  flex: 1;
+  text-align: center;
+}
+
+
+.promo-image {
+  max-width: 100px;
+  
+}
+
+.promotion-title {
+  color: $color_5;
+  /* margin: 0; */
+  text-align:center;
+  /* Removed text-align: center; */
+}
+
+.promo-image:first-child {
+  text-align:left;
+  margin-left:8%;
+  margin-bottom: 5%;  
+}
+
+.promo-image:last-child {
+  text-align: right; 
+  margin-right:12%;
+}
+
+
+.client-say {
+  color: $color_6;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.client-image-container {
+  display: flex;
+  justify-content: center; 
+}
+
+.client-image {
+  width: 110px;
+}
+
+.testimonial-section {
+  @include flex-center;
+  margin: 20px 0; 
+}
+
+.left-arrow {
+  @include flex-center;
+  width: 40px; 
+  height: 40px; 
+  border-radius: 50%; 
+  background-color: $background-color_11; 
+  color: $color_2; 
+  font-size: 20px; 
+  cursor: pointer; 
+  
+}
+
+.arrow {
+  @include flex-center;
+  width: 40px; 
+  height: 40px; 
+  border-radius: 50%; 
+  background-color: grey; 
+  color: $color_2; 
+  font-size: 20px; 
+  cursor: pointer; 
+}
+
+
+.testimonial-content {
+  border-radius: 2%;
+  padding: 20px;
+  text-align: center;
+  background-color: $background-color_9;
+  margin: 0 10px; 
+}
+
+.testimonial-quote ~ .testimonial-author {
+  margin: 10px 0; 
+  /* word-wrap: break-word; */
+}
+
+.testimonial-quote {
+  word-wrap: break-word; 
+  word-break: break-word; 
+  hyphens: auto; 
+  max-width: 600px; 
+  margin: auto; 
+  padding: 10px; 
+}
+
+.travel-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; 
+  padding: 10px; 
+  background-color: $background-color_10; 
+}
+
+.footer-image {
+  width: 20%; 
+  height: 20%; 
+  margin-right: auto; 
+  padding-right:5%;
+}
+
+.orange-line {
+  display: none; 
+ 
+}
+
+
+/* Footer Section */
+
+.footer {
+  padding: 40px; 
+  // background-image: url(../styles/Images/moutain1.png);
+  @include footer-background('../styles/Images/moutain1.png', cover, center);
+ 
+}
+
+
+.logo-text-section, .company-section, .destination-section, .newsletter-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-section img {
+  width: 50%;
+  height: auto;
+}
+
+.social-links a img {
+  width: 30px;
+  height: auto;
+}
+
+.company-links, .destination-links {
+  padding: 10px 0;
+}
+
+.newsletter-section h2 {
+  margin-top: 0;
+}
+
+.form-textbox {
+  margin-bottom: 10px;
+}
+
+.form-submit {
+  background-color: $background-color_5;
+  color: $color_4;
+  border-radius: 5px;
+  line-height: 2.5;
+}
+
+.newsletter-info {
+  font-size: small;
+  color: $color_1;
+}
+
+.footer-bottom-line hr {
+  border: 0;
+  height: 1px;
+  background-color: $background-color_12;
+  margin-bottom: 10px;
+ 
+}
+
+p {
+
+  text-align: center;
+}

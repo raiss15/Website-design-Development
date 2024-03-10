@@ -1,0 +1,900 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Banner and Search Form Section */
+
+.bg-img {
+  /* The image used */
+  background-image: url("Images/bgimg4.jpeg");
+  /* max-height: 600px; */
+  min-height:500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+}
+
+/* The navbar */
+.topnav {
+  overflow: hidden;
+  /* background-color: #333; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* padding:  5px; */
+}
+
+/* Navbar logo */
+.logo-container {
+  padding-left: 20px 20px;
+}
+
+.logo {
+  height: 90px; 
+  width: 100px; 
+  
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: black;
+  text-align:right;
+  padding-right: 20% 20%;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar button */
+.contact-button {
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 5px; /
+}
+
+.contact-button::after{
+  content: " ➜";
+  color: red;
+}
+
+/* .topnav a:hover, .contact-button:hover {
+  background-color: #ddd;
+  color: black;
+} */
+
+/* Clear floats after the topnav */
+/* .topnav::after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+/* Dropdown button */
+.dropbtn {
+    /* background-color: #333; */
+    text-decoration-color: white;
+    padding: 14px 16px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+   
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown button on hover */
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add responsiveness -  */
+  @media screen and (max-width: 600px) {
+    .topnav a, .dropbtn {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .dropdown-content {
+      position: relative;
+    }
+    .topnav {
+      display: block;
+    }
+  }
+  
+  .text{
+
+    color: white;
+    padding-top: 20%;
+    padding-left: 9%;
+  }
+
+  
+
+  .search{
+    padding-left: 9%;
+    padding-right: 60%;
+   
+
+  }
+  .search-form {
+    background-color: rgba(211, 211, 211, 0.5);
+    display: flex;
+    /* justify-content:space-evenly; */
+    padding: 30px;
+    padding-right:40%;
+    
+}
+
+.search-form input[type="text"],
+.search-form select {
+    flex: 1;
+    border: 0px solid white;
+    margin-right: 10px;
+    padding-left: 0%;
+}
+
+.search-form select:last-child {
+    margin-right: 0; 
+}
+
+.submit-btn {
+    background-color: rgb(218, 88, 52);
+    border-radius: 5px;
+    line-height: 2.5;
+    color: #fff;
+    border: none; 
+    cursor: pointer; 
+   
+}
+
+.submit-btn {
+    padding: 0 10px;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    padding-left: 9%;
+  }
+  
+  .profile-icon {
+    border-radius: 50%; 
+    width: 40px;
+    height: 40px; 
+    margin-right: -15px; 
+    border: 2px solid white; 
+    background-color: orange;
+    
+  }
+  
+  .more-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    /* background-color: grey;  */
+    color: white;
+    font-weight: bold;
+    margin-left: -15px;
+   padding-left:-5%;
+  }
+  
+  
+  
+  .text {
+
+    color: white;
+    margin: 10px;
+    overflow: auto;
+    flex-basis: 100px;
+    flex-grow: 0.1;
+    flex-shrink: 0.2;
+  }
+
+  .icon-text-wrapper {
+    display: flex; 
+    align-items: center; 
+    color: white;
+}
+
+.scroll{
+  padding-right: 90%;
+    
+    color: white;
+}
+
+/* Brand Logo Section */
+
+
+.company-logo{
+
+    background-color: rgba(211, 211, 211, 0.5); 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 1% ;
+    
+}
+
+/* ServiceSection  */
+
+.category-title h4,
+.main-title h1 {
+    text-align: center;
+}
+
+.category-title h4 {
+    color: orange;
+}
+
+.main-title h1 {
+    color: rgb(11, 2, 63);
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.service {
+    text-align: center;
+    padding: 0 2%; 
+}
+
+.service-image {
+    width: 100px;
+    height: 100px;
+}
+
+.service-title {
+    color: rgb(11, 2, 63);
+    padding: 10px 0; 
+}
+
+.service-description {
+  word-wrap: break-word; 
+  width: 150px; 
+}
+
+#flight-option:hover {
+  background-color: white; 
+  transform: scale(1.05); 
+  transition: transform 0.3s ease, background-color 0.3s ease; 
+  cursor: pointer; 
+  box-sizing: border-box;
+  border-radius: 2%;
+  box-shadow:black;
+
+}
+
+/* Special Package Section  */
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container {
+  flex: 1;
+  text-align: center;
+  padding-left: 10%;
+  width: 100%; 
+  height: 280%
+  image
+}
+
+.responsive-image {
+  width: 100%;
+  height: auto; 
+}
+
+.text-container {
+  flex: 1;
+  padding-left: 5%; 
+}
+
+.honeymoon-special {
+  color: orange;
+  text-align: left;
+}
+
+.romantic-destinations {
+  color: rgb(11, 2, 63);
+  text-align: left;
+}
+
+.package-description {
+  text-align: left; 
+}
+
+.view-packages-btn {
+  background-color: rgb(218, 88, 52);
+  border-radius: 5px;
+  line-height: 2.5;
+  color: #fff;
+  border: none; 
+  cursor: pointer; 
+  margin-top: 20px; 
+}
+
+
+/* Booking Option Section */
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-container {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.fast-easy, .resort-bookings {
+  text-align: left;
+  padding-left: 35%;
+}
+
+.fast-easy {
+  color: orange;
+}
+
+.resort-bookings {
+  color: rgb(11, 2, 63);
+}
+
+.description-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  padding-left: 35%;
+}
+
+.small-image {
+  width: 80px;
+  height: 80px;
+}
+
+h4 {
+  color: rgb(11, 2, 63);
+}
+
+.right-container {
+  flex: 1;
+  text-align: center;
+  padding-right:5%;
+}
+
+.large-image {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+}
+
+/* Middle Banner Section */
+
+.background-section {
+  position: relative;
+  width: 100%; 
+  height: 300px; 
+  background-image: url('Images/liberty.jpeg'); 
+  background-size: cover; 
+  background-position: center; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.text-overlay {
+  color: white; 
+  font-size: 24px; 
+  text-align: center;
+  padding: 20px; 
+  padding-right:35%;
+}
+
+/* Package Offer Section */
+
+ .content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:5%;
+  margin-bottom: 30px;
+  position: relative;
+  
+}
+
+.left-container, .right-container {
+  flex: 1;
+}
+
+.promotion-title {
+  color: orange;
+  padding-left: 35%;
+}
+
+.main-title {
+  color: rgb(11, 2, 63);
+  padding-left: 35%;
+}
+
+.description {
+  padding-left: 35%;
+}
+
+.view-button {
+  background-color: orange;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px 20px;
+  margin-left: 35%;
+  cursor: pointer;
+  padding-left: 35%;
+}
+
+.images-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  overflow-x: auto; 
+  white-space: nowrap; 
+  /* gap: 2px; */
+  margin-right: -210px;
+  margin-left: 180px;
+
+}
+
+.city-image-container {
+  position: relative;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+.city-image {
+  width: 150px; 
+  height: 150px; 
+  object-fit: cover; 
+  border-radius: 10px;
+
+  
+}
+
+.price-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(218, 88, 52, 0.8);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin:5px;
+  border-radius: 10px;
+}
+
+.city-image-container london {
+
+  position:absolute;
+  top: 0;
+  right: 80%;
+  z-index: 1;
+}
+
+.paris-image {
+  width: 320px;
+  height: auto;
+  border-radius: 5px;
+  /* position: absolute; */
+} 
+
+/* Banner Section */
+
+.content-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.content-block {
+  position: relative;
+  width: 45%; 
+  height: 300px; 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.nature {
+  background-image: url('Images/nature.webp');
+}
+
+.city {
+  background-image: url('Images/city.jpeg');
+}
+
+.promotion-title, .section-title, .view-button {
+  color: white;
+  margin: 10px;
+  
+}
+
+.promotion-title {
+
+  text-align: center;
+  padding-left: 5%;
+}
+
+.view-button1 {
+  background-color: orange;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px 20px;
+  margin-left: 30%;
+  cursor: pointer;
+  padding-left: 5%;
+}
+
+.view-button:hover {
+  background-color: darkgray;
+}
+
+
+/* Differrent Package Options */
+
+.trending-section {
+  text-align: center;
+
+  padding: 2px;
+}
+
+.trending-title {
+  color: orange;
+  
+}
+
+.trending-subtitle {
+  color: rgb(11, 2, 63);
+}
+
+.tour-packages {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /* padding: 1px; */
+  flex-wrap: wrap; 
+}
+
+.package {
+  width: 30%; 
+  margin: 1%; 
+  padding: 5%;
+  /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); Optional: Adds shadow for depth */
+  background-color: #fff; /* Optional: For better readability */
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px; 
+}
+
+.icon, .details img {
+  width: 8%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.details {
+  color: gray;
+  margin-bottom: 20px; 
+}
+
+.location, .destination, .price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px; 
+  
+}
+
+.view-button2 {
+
+  background-color: orange;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px;
+  margin-left: 2%;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rating {
+  width: 80px;
+  height: auto;
+}
+
+.explore-button {
+  background-color: rgb(218, 88, 52);
+  color: #fff;
+  border-radius: 5px;
+  line-height: 2.5;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  width: 100%; 
+  margin-top: 20px; 
+}
+
+
+/* Client Testimonial */
+
+.main-container {
+  background-color: whitesmoke;
+}
+
+.promotion-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; 
+  padding: 0 20px; 
+}
+
+.promotion-section > * {
+  flex: 1;
+  text-align: center;
+}
+
+
+.promo-image {
+  max-width: 100px;
+  
+}
+
+.promotion-title {
+  color: orange;
+  /* margin: 0; */
+  text-align:center;
+  /* Removed text-align: center; since flexbox will center the text */
+}
+
+.promo-image:first-child {
+  text-align:left;
+  margin-left:8%;
+  margin-bottom: 5%;  
+}
+
+.promo-image:last-child {
+  text-align: right; 
+  margin-right:12%;
+}
+
+
+.client-say {
+  color: rgb(11, 2, 63);
+  text-align: center;
+  margin-top: 10px;
+}
+
+.client-image-container {
+  display: flex;
+  justify-content: center; 
+}
+
+.client-image {
+  width: 110px;
+}
+
+.testimonial-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0; 
+}
+
+.left-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; 
+  height: 40px; 
+  border-radius: 50%; 
+  background-color: grey; 
+  color: white; 
+  font-size: 20px; 
+  cursor: pointer; 
+  
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; 
+  height: 40px; 
+  border-radius: 50%; 
+  background-color: grey; 
+  color: white; 
+  font-size: 20px; 
+  cursor: pointer; 
+}
+
+
+.testimonial-content {
+  border-radius: 2%;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  margin: 0 10px; 
+}
+
+.testimonial-quote ~ .testimonial-author {
+  margin: 10px 0; 
+  /* word-wrap: break-word; */
+}
+
+.testimonial-quote {
+  word-wrap: break-word; 
+  word-break: break-word; 
+  hyphens: auto; 
+  max-width: 600px; 
+  margin: auto; 
+  padding: 10px; 
+}
+
+.travel-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; 
+  padding: 10px; 
+  background-color: whitesmoke; 
+}
+
+.footer-image {
+  width: 20%; 
+  height: 20%; 
+  margin-right: auto; 
+  padding-right:5%;
+}
+
+.orange-line {
+  display: none; 
+ 
+}
+
+
+/* Footer Section */
+
+/* .footer-section {
+  background-size: cover;
+  background-position: center;
+} */
+
+.footer-section {
+  background-image: url('Images/moutain1.png');
+  background-size: cover; 
+  background-position: center; 
+}
+
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  padding: 20px;
+}
+
+.logo-text-section, .company-section, .destination-section, .newsletter-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-section img {
+  width: 50%;
+  height: auto;
+}
+
+.social-links a img {
+  width: 30px;
+  height: auto;
+}
+
+.company-links, .destination-links {
+  padding: 10px 0;
+}
+
+.newsletter-section h2 {
+  margin-top: 0;
+}
+
+.form-textbox {
+  margin-bottom: 10px;
+}
+
+.form-submit {
+  background-color: rgb(218, 88, 52);
+  color: #fff;
+  border-radius: 5px;
+  line-height: 2.5;
+}
+
+.newsletter-info {
+  font-size: small;
+  color: black;
+}
+
+.footer-bottom-line hr {
+  border: 0;
+  height: 1px;
+  background-color: #ccc;
+  margin-bottom: 10px;
+ 
+}
+
+p {
+
+  text-align: center;
+}

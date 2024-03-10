@@ -1,0 +1,16 @@
+@mixin bg-img{
+
+  min-height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  
+    .text {
+      color: $color_2;
+      padding-top: 20%;
+      padding-left: 9%;
+    }
+
+}
+

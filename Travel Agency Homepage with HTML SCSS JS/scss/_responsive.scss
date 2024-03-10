@@ -1,0 +1,27 @@
+// Variables for responsive design
+@mixin responsive {
+
+$mobile-breakpoint: 600px;
+$padding-small: 0; // Unitless value
+$padding-large: 20px; // Pixel value
+
+// Adding $padding-small when used in a calculation with $padding-large
+$dynamic-padding: #{$padding-small}px + ($padding-large - #{$padding-small}px) / 2;
+
+// Media query using a variable
+@media screen and (max-width: $mobile-breakpoint) {
+  .topnav a, .dropbtn {
+    display: block;
+    text-align: left;
+  }
+
+  .topnav {
+    display: block;
+  }
+
+  .search-form {
+    flex-direction: column;
+    padding-right: $padding-small; 
+  }
+}
+}

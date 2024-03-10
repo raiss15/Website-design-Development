@@ -1,0 +1,14 @@
+// Define a mixin for setting background properties
+@mixin footer-background($image, $size: cover, $position: center) {
+  background-image: url($image);
+  background-size: $size;
+  background-position: $position;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  padding: 20px;
+  @include footer-background('../styles/Images/moutain1.png', cover, center);
+}
