@@ -1,0 +1,16 @@
+meta {
+  name: Filter notes by title, content and action items
+  type: http
+  seq: 6
+}
+
+get {
+  url: http://localhost:3000/api/meetingNotes/filterNoteByDateRange?startDate=2024-04-08T15:01:30.438&endDate=2024-04-10T15:33:24.988
+  body: none
+  auth: none
+}
+
+query {
+  startDate: 2024-04-08T15:01:30.438
+  endDate: 2024-04-10T15:33:24.988
+}

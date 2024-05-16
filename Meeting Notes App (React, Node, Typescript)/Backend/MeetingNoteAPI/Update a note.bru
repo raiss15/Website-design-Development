@@ -1,0 +1,39 @@
+meta {
+  name: Update a note
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:3000/api/meetingNotes/note/660d7806fcf3575ea72587af
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "_id": "660d7806fcf3575ea72587af",
+      "title": "DS",
+      "content": "data science, auto ml , feature selection",
+      "actionItems": [
+        {
+          "value": "create ",
+          "completed": false,
+          "_id": "660d7806fcf3575ea72587b0"
+        },
+        {
+          "value": " task 10",
+          "completed": false,
+          "_id": "660d7806fcf3575ea72587b1"
+        },
+        {
+          "value": " task 3",
+          "completed": false,
+          "_id": "660d7806fcf3575ea72587b2"
+        }
+      ],
+      "completed": false,
+      "creationDate": "2024-04-03T15:38:46.187Z",
+      "__v": 0
+    }
+}

@@ -1,0 +1,32 @@
+meta {
+  name: Create a new note
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/api/meetingNotes/createNote
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title": "Web tools ",
+    "content": "Building and training the model to fir the best fit using autoML",
+    "actionItems": [
+      {
+        "value": "UI",
+        "completed": false
+      },
+      {
+        "value": "Train the model",
+        "completed": false
+      },
+      {
+        "value": "test",
+        "completed": false
+      }
+    ]
+  }
+}

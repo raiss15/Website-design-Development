@@ -1,0 +1,15 @@
+meta {
+  name: Filter notes
+  type: http
+  seq: 7
+}
+
+get {
+  url: http://localhost:3000/api/meetingNotes/filterNote?keyword=Ma
+  body: none
+  auth: none
+}
+
+query {
+  keyword: Ma
+}

@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Design Review",
+        "content": "Design options were presented for the upcoming campaign, and feedback was collected.",
+        "actionItems": ["Revise design mockups", "Select final designs", "Schedule follow-up meeting"],
+        "creationDate": "2024-03-01"
+    },
+    {
+        "title": "Budget Planning",
+        "content": "Initial budget estimates were discussed and key financial decisions were made.",
+        "actionItems": ["Allocate funds for marketing", "Approve procurement plan", "Review next quarter's forecast"],
+        "creationDate": "2024-03-05"
+    },
+    {
+        "title": "Q2 Strategy Session",
+        "content": "Strategies for Q2 were outlined with a focus on sales and product development.",
+        "actionItems": ["Hire new sales manager", "Plan product launch event", "Update roadmaps"],
+        "creationDate": "2024-03-10"
+    },
+    {
+        "title": "Client Feedback Meeting",
+        "content": "Client provided feedback on the recent deliverables. Improvement to be prioritized.",
+        "actionItems": ["Address client's concerns", "Prepare a response plan", "Set a meeting for review"],
+        "creationDate": "2024-03-15"
+    },
+    {
+        "title": "Software Upgrade Discussion",
+        "content": "We evaluated the need for software upgrades and potential impacts on current operations.",
+        "actionItems": ["Test compatibility", "Schedule software upgrade", "Train staff on new features"],
+        "creationDate": "2024-03-20"
+    },
+    {
+        "title": "Health & Safety Training",
+        "content": "Conducted a session on health and safety procedures, emphasizing new policies.",
+        "actionItems": ["Distribute safety manuals", "Complete training assessments", "Install new safety signage"],
+        "creationDate": "2024-03-25"
+    }
+]

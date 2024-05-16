@@ -1,0 +1,37 @@
+meta {
+  name: Create Multiple notes
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3000/api/meetingNotes/createmultipleNote
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "notes":[
+      
+      {
+        "title": "Business Development Associate ",
+    "content": "Strategies for Q2 were outlined with a focus on sales and product development.",
+    "actionItems": [
+      "Hire new sales manager",
+      "Plan product launch event",
+      "Update roadmaps"
+    ]
+      },
+      {
+        "title": "Q7 Strategy Session  ",
+    "content": "Strategies for Q2 were outlined with a focus on sales and product development.",
+    "actionItems": [
+      "Hire new sales manager",
+      "Plan product launch event",
+      "Update roadmaps"
+    ]
+      }
+    ]
+  }
+}
